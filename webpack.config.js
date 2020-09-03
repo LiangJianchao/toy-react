@@ -4,8 +4,10 @@ module.exports = {
   entry: {
     main: "./main.js",
   },
+  output: { filename: "main.js" },
   devServer: {
-    contentBase: "./dist",
+    // contentBase: "./dist",
+    writeToDisk: true,
     hot: true,
   },
   module: {
